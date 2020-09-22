@@ -1,0 +1,58 @@
+.heading{
+    background-color: darkslateblue;
+    color: white;
+    margin: auto;
+    padding: 35px;
+    
+    
+}
+h1 {
+    text-align: center;
+}
+
+/* h2, h3 {
+    color: black;
+} */
+h2 {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+h3{
+    padding: 10px;
+}
+body{
+    margin: auto;
+}
+    form{
+    padding: 10px;
+
+    }
+
+aside {
+    background-color: ghostWhite ;
+    display: flex;
+    justify-content: flex-start;
+    
+    /* padding: 10px; */
+    /* margin: ; */
+    
+    
+}
+
+
+
+.currentInfo {
+    border: solid  grey 1px;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 15em;
+}
+
+.fiveDayInfo {
+    /* border: solid black 1px; */
+    margin: 5px;
+    padding: 5em;
+}
+

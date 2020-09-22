@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+
+</head>
+
+<body>
+
+    <header class="heading">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="row">
+        <!-- ASIDE is the container on the left holding the search bar and history -->
+
+        <aside class="search col-lg-4">
+
+            <div>
+
+                <header>
+                    <h3>Search for a City:</h3>
+                </header>
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <!-- needs an onlcick for the button to pull from ajax -->
+                    <button class="searchBtn" type="submit">Submit</button>
+                </form>
+            </div>
+
+
+
+            <!-- The div with the history being save "preventDefault" so it doesnt refresh -->
+            <div id="history">
+
+            </div>
+        </aside>
+
+        <!-- Container on the right where the current day and 5 day forecast will be displayed -->
+        <section class="col-lg-8">
+            <!-- where the ajax pulled info will be displayed "currentInfo" -->
+            <div class="currentInfo">
+
+                <div class="city"> </div>
+                <div class="temp"></div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+                <div class="uvIndex"></div>
+
+            </div>
+            <br>
+            <!-- where an auto pull will be for a five day line up (maybe another ajax pull request?) -->
+            <div class="fiveDayInfo">
+                <header>
+                    <h2>5-Day Forecast:</h2>
+                </header>
+                <div id="city1"></div>
+                <div id="city2"></div>
+                <div id="city3"></div>
+                <div id="city4"></div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" type="text/javascript">
+    </script>
+</body>
+
+</html>
