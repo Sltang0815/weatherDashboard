@@ -18,7 +18,7 @@ function currentCity(city) {
 
             console.log(response);
             // let date vairable for date conversion slack
-
+            //***The DATE is labeled as "dt" under "coord" in the console log. look up how to make it not appear as [object]****
             $(".city").html("<h1>" + response.name + "</h1>");
             $(".temp").text("Tempurature " + response.main.temp);
             $(".humidity").text("Humidity " + response.main.humidity);
@@ -48,14 +48,14 @@ $(".searchBtn").on('click', function (event) {
 })
 
 
-// for the history under searche engine
+// for the history under search engine
 // localStorage.getItem();
 // localStorage.setItem();
 // JSON.stingify()      
 //.value() returns an array containing all the enumerable property values of the given object
 
 
-// addEventListener()  multiple click events
+
 
 
 // section to print out the F day line up of tempuratures. Appending to the HTML " id='fiveDay' " <div>
@@ -79,7 +79,8 @@ function fiveDayLineUp(cities) {
             console.log(response);
             // let date vairable for date conversion slack
 
-            // appending for a five day line up id "history"
+            // ****appending for a five day line up id "history"****
+            // Figure out why its not pulling. Look how to append and create a row on the HTML through jquery
             $("#fiveDay").text.append(response);
 
         });
